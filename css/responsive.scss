@@ -1,0 +1,165 @@
+// 設定
+// ---------------------------------
+$bg-color: #b2eaff;
+$main-color: #0182be;
+$accent-color: #ffcc00;
+$font-normal: 14px;
+$font-large: 20px;
+
+
+
+
+// 600px以下の場合
+@media(max-width:600px) {
+
+  // ヘッダー
+  // ---------------------------------
+  header {
+
+    .inner {
+      width: auto;
+      height: auto;
+
+    }
+
+    h1 {
+      position: static;
+      text-align: center;
+      margin: 20px 0;
+
+
+    }
+
+    nav {
+      position: static;
+    }
+
+    ul {
+      overflow: hidden;
+      background-color: $main-color;
+    }
+
+    li {
+      width: 25%;
+      margin: 0;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  // 共通
+  // ---------------------------------
+  .content {
+    width: auto;
+  }
+
+  // メイン
+  // ---------------------------------
+  main {
+    width: auto;
+    float: none;
+    margin-bottom: 80px;
+  }
+
+
+
+  // サイド
+  // ---------------------------------
+  aside {
+    width: auto;
+    float: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    .banner{
+      text-align: center;
+    }
+  }
+
+  // フッター
+// ---------------------------------
+footer {
+  background-color: $bg-color;
+  height: auto;
+  p{
+    margin-bottom: 20px;
+    br{
+      display: inline;
+      // PC版では改行を無効にする 
+    }
+  }
+}
+
+
+
+  // トップページ
+  // ---------------------------------
+  #home {
+    main {
+      .main-image {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  // 学科紹介
+  // ---------------------------------
+  #course {
+    main {
+      section {
+        margin: 0 20px 80px 20px;
+                
+        figure {
+          float: none;
+         margin-bottom: 20px;;
+          text-align: center;
+        }
+        h3 {
+          color: $main-color;
+          margin-bottom: 20px;
+          font-size: $font-large;
+        }
+        p {
+          margin: 0 auto 40px auto;
+          line-height: 1.3;
+        }
+      }
+    }
+  }
+
+// アクセス
+// ---------------------------------
+#access {
+  main {
+    section {
+      margin: 0 20px 40px 0;
+      
+      h3 {
+        font-size: $font-large;
+        color: $main-color;
+        margin: 0 0 20px 0;
+      }
+      p {
+        margin: 0 0 20px 0;
+        line-height: 1.3;
+      }
+      &.mihama figure {
+        
+        margin: 0 20px 0 20px;
+      }
+      &.american h3 {
+        text-align: center;
+      }
+    }
+    address {
+      text-align: center;
+      margin: 20px 0 0 0;
+      line-height: 1.3;
+    }
+  }
+}
+
+}
